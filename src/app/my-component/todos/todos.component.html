@@ -1,0 +1,7 @@
+
+
+@for(todo of todos; track todos){
+    <div>
+        <app-todo-item [todo]="todo" (tododelete)="deletetodo($event)"></app-todo-item>
+    </div>
+}
